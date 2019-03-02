@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "author": "Andrew Jarrett <ahrjarrett>",
   "dependencies": {
-    "@mdx-js/tag": "0.18.0",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.30",
     "gatsby-mdx": "0.4.0",
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "@mdx-js/mdx": "0.20.0",
+    "@mdx-js/tag": "0.18.0",
     "prettier": "^1.16.4"
   },
   "keywords": [
