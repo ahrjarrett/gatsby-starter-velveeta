@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter VELTVEETA®`,
-    author: `@ahrjarrett`,
     description: `A Gatsby starter kit for writing with MDX, Prism.js & Styled Components.`,
+    author: {
+      name: `Andrew Jarrett`,
+      github: `ahrjarrett`,
+      twitter: `@ahrjarrett`,
+      website: `https://thegrepper.com`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
