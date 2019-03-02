@@ -1,0 +1,45 @@
+#+TITLE: Gatsby Starter VELTVEETA®
+#+AUTHOR: Andrew Jarrett
+
+- [x] MDX
+- [x] PrismJS with MDX
+- [x] Styled Components
+- [ ] TypeScript
+
+* Gatsby Blog
+
+** Install the latest Gatsby globally
+
+Install =gatsby@next= and =gatsby-cli@next= globally.
+
+Then from =blog= do:
+
+#+BEGIN_SRC shell
+  gatsby new thegrepper-blog
+#+END_SRC
+
+
+** Install dependencies
+
+#+BEGIN_SRC shell
+  gatsby-source-filesystem@next
+  gatsby-transformer-remark@next
+  prism-react-renderer
+  prismjs
+  react@next
+  react-dom@next
+
+gatsby-mdx
+#+END_SRC
+
+** Bring in MDX
+
+Inside the pages directory create a directory for each post. Inside each, write your blog post in the =index.mdx= file.
+
+** GraphiQl
+
+Run =gatsby develop= and then navigate to =localhost:8000/___graphql=
+
+*** TODOs
+- [ ] Change to support org-mode files
+- [ ] Figure out how to lazy load dependencies, i.e. we don’t need D3 for all blogposts
