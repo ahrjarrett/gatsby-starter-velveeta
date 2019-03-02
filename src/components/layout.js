@@ -19,13 +19,20 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            author {
+              github
+            }
           }
         }
       }
     `}
-    render={data => (
+    render={({
+      site: {
+        siteMetadata: { author, title },
+      },
+    }) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={title} />
         <div
           style={{
             margin: `0 auto`,
@@ -36,9 +43,14 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            ® {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            ® {new Date().getFullYear()}{" "}
+            <a
+              href={`https://github.com/${author.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {author.github}
+            </a>
           </footer>
         </div>
       </>
